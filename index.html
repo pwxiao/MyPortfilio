@@ -17,8 +17,8 @@
           <div class="mdui-card-media">
             <img src="https://img1.imgtp.com/2023/07/19/hTq0aSRu.png"/>
             <div class="mdui-card-menu">
-              <button class="mdui-btn mdui-btn-icon mdui-text-color-white"> <i class="mdui-icon material-icons">code</i></button>
-              <button class="mdui-btn mdui-btn-icon mdui-text-color-white"> <i class="mdui-icon material-icons">file_download</i>
+               <button class="mdui-btn mdui-btn-icon mdui-text-color-white"> <i class="mdui-icon material-icons">code</i></button>
+              <button id="download_solver" class="mdui-btn mdui-btn-icon mdui-text-color-white"> <i class="mdui-icon material-icons">file_download</i>
             </div>
           </div>
           <div class="mdui-card-primary">
@@ -39,8 +39,8 @@
           <div class="mdui-card-media">
             <img src="https://img1.imgtp.com/2023/07/19/hTq0aSRu.png"/>
             <div class="mdui-card-menu">
-              <button class="mdui-btn mdui-btn-icon mdui-text-color-white"> <i class="mdui-icon material-icons">code</i></button>
-              <button class="mdui-btn mdui-btn-icon mdui-text-color-white"> <i class="mdui-icon material-icons">file_download</i>
+               <button class="mdui-btn mdui-btn-icon mdui-text-color-white"> <i class="mdui-icon material-icons">code</i></button>
+              <button id="download_shishuo" class="mdui-btn mdui-btn-icon mdui-text-color-white"> <i class="mdui-icon material-icons">file_download</i>
             </div>
           </div>
           <div class="mdui-card-primary">
@@ -54,5 +54,15 @@
   </div>
   
   <script src="./js/mdui.min.js"></script>
+    <script>
+    var myButton = document.getElementById('download_solver');
+    myButton.addEventListener('click', function() {
+      window.open('https://www.pgyer.com/solver', 'newWindow');
+});
+var myButton1 = document.getElementById('download_shishuo');
+    myButton1.addEventListener('click', function() {
+      window.open('https://www.pgyer.com/shishuo', 'newWindow');
+});
+  </script>
 </body>
 </html>
