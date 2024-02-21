@@ -1,120 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Portfilio | Xiaolog</title>
-  <link rel="stylesheet" href="./css/mdui.min.css"/>
-  <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项目 | 乔不思</title>
+  <!-- 使用 Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    .project-image {
+      height: 400px; /* 调整图片高度 */
+      object-fit: cover;
+    }
+    .black-title {
+      color: red; /* 将标题颜色修改为红色 */
+    }
+  </style>
 </head>
 <body>
-
-  <div class="mdui-container">
-    <div class="mdui-row">
-      <div class="mdui-col-sm-6 mdui-col-md-4">
-        <div class="mdui-card">
-
-          <div class="mdui-card-media">
-            <img src="coursetable.png"/>
-            <div class="mdui-card-menu">
-               <button class="mdui-btn mdui-btn-icon mdui-text-color-white"> <i class="mdui-icon material-icons">code</i></button>
-              <button id="download_coursetable" class="mdui-btn mdui-btn-icon mdui-text-color-white"> <i class="mdui-icon material-icons">file_download</i>
-            </div>
+  <div class="container">
+    <h1 class="center-align">我的项目</h1>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img class="project-image" src="coursetable.png" alt="项目图片">
+            <span class="card-title">好好好课程表</span>
           </div>
-          <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">好好好课程表</div>
-            <div class="mdui-card-primary-subtitle">掌上教务系统</div>
+          <div class="card-content white-text">
+            <p>Austers的掌上教务系统，支持查成绩查考试安排查课表(已经停止更新)</p>
           </div>
-          <div class="mdui-card-content">支持查课表，查成绩，查考试</div>
+          <div class="card-action">
+            <a href="https://www.pgyer.com/coursetable">下载链接</a>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <div class="mdui-container">
-    <div class="mdui-row">
-      <div class="mdui-col-sm-6 mdui-col-md-4">
-        <div class="mdui-card">
-
-          <div class="mdui-card-media">
-            <img src="solver.png"/>
-            <div class="mdui-card-menu">
-               <button class="mdui-btn mdui-btn-icon mdui-text-color-white"> <i class="mdui-icon material-icons">code</i></button>
-              <button id="download_solver" class="mdui-btn mdui-btn-icon mdui-text-color-white"> <i class="mdui-icon material-icons">file_download</i>
-            </div>
+      <div class="col s12 m6">
+        <div class="card blue-grey darken-1">
+          <div class="card-image">
+            <img class="project-image" src="solver.png" alt="项目图片">
+            <span class="card-title">Solver</span>
           </div>
-          <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">Solver</div>
-            <div class="mdui-card-primary-subtitle">A Math Slover</div>
+          <div class="card-content white-text">
+            <p>一个功能强大的数学求解器，支持解方程等等</p>
           </div>
-          <div class="mdui-card-content">功能强大的数学求解器，支持解方程</div>
+          <div class="card-action">
+            <a href="https://github.com/pwxiao/MathSolver">项目地址</a>
+          </div>
         </div>
       </div>
+      <!-- 这里可以添加更多项目卡片 -->
     </div>
-  </div>
-
-<div class="mdui-container">
-    <div class="mdui-row">
-      <div class="mdui-col-sm-6 mdui-col-md-4">
-        <div class="mdui-card">
-
-          <div class="mdui-card-media">
-            <img src="shishuo.png"/>
-            <div class="mdui-card-menu">
-               <button class="mdui-btn mdui-btn-icon mdui-text-color-black"> <i class="mdui-icon material-icons">code</i></button>
-              <button id="download_shishuo" class="mdui-btn mdui-btn-icon mdui-text-color-black"> <i class="mdui-icon material-icons">file_download</i>
+    <div class="row">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-image">
+              <img class="project-image" src="gooodclass.png" alt="项目图片">
+              <span class="card-title">Gooodclass</span>
+            </div>
+            <div class="card-content white-text">
+              <p>这是好好好课程表重构版，使用Flutter重新开发</p>
+            </div>
+            <div class="card-action">
+              <a href="https://www.pgyer.com/gooodclass">下载链接</a>
             </div>
           </div>
-          <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">诗说</div>
-            <div class="mdui-card-primary-subtitle">念念不忘，必有回响</div>
-          </div>
-          <div class="mdui-card-content">读诗APP，界面简约,功能强大</div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="mdui-container">
-    <div class="mdui-row">
-      <div class="mdui-col-sm-6 mdui-col-md-4">
-        <div class="mdui-card">
-
-          <div class="mdui-card-media">
-            <img src="studybar.png"/>
-            <div class="mdui-card-menu">
-               <button class="mdui-btn mdui-btn-icon mdui-text-color-white"> <i class="mdui-icon material-icons">code</i></button>
-              <button id="download_studybar" class="mdui-btn mdui-btn-icon mdui-text-color-white"> <i class="mdui-icon material-icons">file_download</i>
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-image">
+              <img class="project-image" src="shishuo.png" alt="项目图片">
+              <span class="card-title" style="color: black;">诗说</span>
+            </div>
+            <div class="card-content white-text">
+              <p>一款古诗词学习软件</p>
+            </div>
+            <div class="card-action">
+              <a href="https://www.pgyer.com/shishuo">下载链接</a>
             </div>
           </div>
-          <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">学吧</div>
-            <div class="mdui-card-primary-subtitle">多功能学习助手</div>
-          </div>
-          <div class="mdui-card-content">查资料，定时器，LaTex编辑，还支持自定义计算</div>
         </div>
+        <!-- 这里可以添加更多项目卡片 -->
       </div>
-    </div>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-image">
+              <img class="project-image" src="studybar.png" alt="项目图片">
+              <span class="card-title">学吧</span>
+            </div>
+            <div class="card-content white-text">
+              <p>多功能学习助手，查资料，定时器，LaTex编辑，还支持自定义计算</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/pwxiao/StudyBar">项目地址</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-image">
+              <img class="project-image" src="mdviewer.png" alt="项目图片">
+              <span class="card-title">Mdviewer</span>
+            </div>
+            <div class="card-content white-text">
+              <p>一个安卓平台的Markdown编辑软件，支持编辑预览
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="https://www.pgyer.com/mdviewer">下载链接</a>
+            </div>
+          </div>
+        </div>
+        <!-- 这里可以添加更多项目卡片 -->
+      </div>
   </div>
-  
-  <script src="./js/mdui.min.js"></script>
-    <script>
-    var myButton = document.getElementById('download_solver');
-    myButton.addEventListener('click', function() {
-      window.open('https://www.pgyer.com/solver', 'newWindow');
-});
-          var myButton = document.getElementById('download_coursetable');
-    myButton.addEventListener('click', function() {
-      window.open('https://www.pgyer.com/coursetable', 'newWindow');
-});
-var myButton1 = document.getElementById('download_shishuo');
-    myButton1.addEventListener('click', function() {
-      window.open('https://www.pgyer.com/shishuo', 'newWindow');
-});
-var myButton2 = document.getElementById('download_studybar');
-    myButton2.addEventListener('click', function() {
-      window.open('https://www.pgyer.com/studybar', 'newWindow');
-});
+
+  <!-- 导入 Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    // 初始化 Materialize 组件
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems);
+    });
   </script>
 </body>
 </html>
